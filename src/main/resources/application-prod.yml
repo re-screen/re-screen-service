@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db.rnwjgzsjskhugflfytcc.supabase.co:5432/postgres?sslmode=require
+    username: postgres
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+logging:
+  level:
+    root: ERROR
+
+server:
+  port: 8080
