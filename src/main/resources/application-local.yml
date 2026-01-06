@@ -1,8 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/rescreen
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: Rescreen@22
+    password: postgres
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -11,4 +12,4 @@ spring:
 
 logging:
   level:
-    root: DEBUG
+    root: INFO

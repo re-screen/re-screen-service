@@ -1,12 +1,13 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db.rnwjgzsjskhugflfytcc.supabase.co:5432/postgres?sslmode=require
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: ${DB_PASSWORD}
+    password: postgres
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
     show-sql: true
 
 logging:
